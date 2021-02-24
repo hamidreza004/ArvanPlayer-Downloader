@@ -5,6 +5,7 @@
 - bash
 - ffmpeg
 - wget
+- python3 (for http-server)
 
 ## Usage
 
