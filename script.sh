@@ -56,9 +56,11 @@ done
 
 cp ../master.m3u8 .
 python3 -m http.server &
+pid=$!
 sleep 5
 youtube-dl --hls-use-mpegts --verbos --retries "infinite" --fragment-retries "infinite" "http://localhost:8000/master.m3u8"
 
+kill $pid
 rm *.ts
 rm *.m3u8
 rm *.key
