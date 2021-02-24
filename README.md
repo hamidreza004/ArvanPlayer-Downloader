@@ -3,7 +3,7 @@
 ## Requierments
 
 - bash
-- ffmpeg
+- [youtube-dl](https://github.com/ytdl-org/youtube-dl)
 - wget
 - python3 (for http-server)
 
