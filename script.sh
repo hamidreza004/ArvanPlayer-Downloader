@@ -48,6 +48,7 @@ done
 segments=`cat index-f1-a1.m3u8 | wc -l`
 segments=`echo $((segments/2-4))`
 
+echo ""
 echo "Downloading $segments audio segments"
 
 for ((i=1;i<=$segments;i++)); do
