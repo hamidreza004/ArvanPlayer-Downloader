@@ -26,6 +26,9 @@ for ((i=1;i<=$segments;i++)); do
     download "$link/seg-$i-f5-v1.ts"
 done
 
+segments=`cat index-f1-a1.m3u8 | wc -l`
+segments=`echo $((segments/2-4))`
+
 for ((i=1;i<=$segments;i++)); do
 	download "$link/seg-$i-f1-a1.ts"
 done
