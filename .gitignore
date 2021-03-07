@@ -1,6 +1,3 @@
-# Created by https://www.toptal.com/developers/gitignore/api/vim
-# Edit at https://www.toptal.com/developers/gitignore?templates=vim
-
 ### Vim ###
 # Swap
 [._]*.s[a-v][a-z]
@@ -22,4 +19,7 @@ tags
 # Persistent undo
 [._]*.un~
 
-# End of https://www.toptal.com/developers/gitignore/api/vim
+
+### Related outputs ###
+# MP4
+*.mp4
