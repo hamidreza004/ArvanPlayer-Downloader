@@ -65,7 +65,7 @@ cp ../master.m3u8 .
 python3 -m http.server 2> /dev/null &
 pid=$!
 sleep 5
-youtube-dl --hls-use-mpegts --retries "infinite" --fragment-retries "infinite" "http://localhost:8000/master.m3u8" 2>&1 | tee youtube_dl_logs.txt
+youtube-dl --hls-use-mpegts --retries "infinite" --fragment-retries "infinite" "http://localhost:8000/master.m3u8" > error.log 2>&1 
 kill $pid
 cp master-master.mp4 ../$name.mp4
 rm *.ts
